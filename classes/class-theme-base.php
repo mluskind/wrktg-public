@@ -4,7 +4,6 @@ if ( !class_exists( 'WRKTG_Public_Theme' ) ) {
   class WRKTG_Public_Theme {
 
     function __construct() {
-      add_action( 'wp_footer', array( $this, 'wp_footer' ) );
       add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
       add_action( 'init', array( $this, 'init' ) );
     }
