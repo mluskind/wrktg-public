@@ -9,28 +9,29 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @author		Konstantin Obenland
- * @package		The Bootstrap
- * @since		1.0.0 - 05.02.2012
+ * @author    Konstantin Obenland
+ * @package    The Bootstrap
+ * @since    1.0.0 - 05.02.2012
  */
 
 get_header( 'front-page' ); ?>
 
-<section id="primary" class="span8">
-	<div id="content" role="main">
+  <section id="primary" class="span8">
+    <div id="content" role="main">
 
-		<?php if ( have_posts() ) : ?>
+      <?php if ( have_posts() ) : ?>
 
-            <?php while ( have_posts() ) : the_post(); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-                <?php get_template_part( 'one-page' ); ?>
+          <?php the_content() ?>
 
-            <?php endwhile; ?>
+        <?php endwhile; ?>
 
-        <?php endif; ?>
+      <?php endif; ?>
 
-	</div><!-- #content -->
-</section><!-- #primary -->
+    </div>
+    <!-- #content -->
+  </section><!-- #primary -->
 
 <?php
 get_footer();
