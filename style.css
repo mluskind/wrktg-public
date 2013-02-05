@@ -9,14 +9,13 @@ Tags:
 Template: the-bootstrap
 */
 
-@import url("../the-bootstrap/style.css");
-
 /*------------------------------------*\
   $Global Styles
 \*------------------------------------*/
 
 body {
-    color: #808792;
+    color: #CCCCCC;
+    /*color: #808792;*/
 }
 h1 {
     font-size: 90px;
@@ -37,21 +36,6 @@ h3, h4, h5, h6{
     line-height: 40px;
     color: #5a5a5a;
   }
-h2 i{
-    padding-right: 5px;
-    font-size: 100px;
-    color: #0774AD;
-}
-
-p i{
-    font-size: 20px;
-    color: #0774AD;
-}
-
-h3 i, h4 i, h5 i, h6 i{
-    font-size: 20px;
-    color: #0774AD;
-}
 
 p{
     font-size: 14px;
@@ -66,41 +50,6 @@ hr {
     border-top: 1px solid #DDD;
 }
 
-.intro{
-    margin: 60px 0 10px;
-    font-size: 60px;
-    font-weight: 200;
-    line-height: 1;
-    letter-spacing: -1px;
-    text-align: center;
-    color: #5a5a5a;
-}
-
-.byline{
-    margin-bottom: 40px;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.25;
-    color: #999;
-    text-align: center;
-}
-
-.border{
-    height: 1px;
-    margin: 70px 0;
-}
-
-client-logo{
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border: 0;
-}
-
-
-
-
 
 /*------------------------------------*\
   $Base
@@ -112,7 +61,7 @@ client-logo{
     z-index: -1;
     background: transparent url('images/lego-dude1.jpg') center fixed;
     background-size: cover;
-    max-height: 675px;
+    max-height: 725px;
 }
 
 .caption .blue {
@@ -170,27 +119,138 @@ client-logo{
 .strip .btn {
     margin-bottom: 3px;
 }
-
-
-
-/* "Our Clientes" Section */
-.customer-logo {
-    padding-right: 38px;
-    padding-bottom: 20px;
+.strip .btn i{
+    font-size: 20px;
+    color: #0774AD;
 }
 
-/* Avatar Images */
-.user-avatar {
-    float: left;
-    margin: 0 10px 10px 0;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
-    -ms-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
-    -o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
+
+/* "Big Things" */
+
+h2.intro {
+    margin: 20px 0 10px;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+p.sub-intro {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #999;
+    text-align: center;
+}
+
+/* "Technology" Section */
+
+.technology div {
+    text-align: center;
+}
+.technology div i {
+    font-size: 100px;
+    color: #0774AD;
+}
+
+.technology .scaleup i {
+    color: #F2CE00;
+    display: block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); /*for IE*/
+}
+
+.technology .well{
+    height: 400px;
+}
+
+
+
+/* "Principles" Section */
+.principles div {
+    text-align: left;
+}
+.principles div i {
+    font-size: 80px;
+    color: #0774AD;
+    float:left;
+}
+
+.experience h3{
+    font-size: 50px;
+    color: #0774AD;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.experience i{
+    padding-right: 15px;
+}
+
+
+.principles div i:hover,
+.principles div i:active,
+.principles div i.active,
+.principles div i.disabled,
+.principles div i[disabled] {
+    color: #F2CE00;
+}
+
+/* "Process" Section */
+
+.approach div {
+    text-align: center;
+}
+.approach div i {
+    font-size: 80px;
+    color: #0774AD;
+}
+
+.expertise h3{
+    font-size: 45px;
+    color: #0774AD;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h3.popover-title{
+    color: #0774AD;
+}
+
+.approach div i:hover,
+.approach div i:active,
+.approach div i.active,
+.approach div i.disabled,
+.approach div i[disabled] {
+    color: #F2CE00;
+}
+
+/* "Clients" Section */
+
+.clients i{
+    color: #2E2E2E;
+}
+
+a.thumbnail{
+    width: 262px;
+}
+
+
+/* "emergency" Section */
+
+.emergency div{
+    text-align: center;
+}
+
+.emergency div i{
+    font-size: 50px;
+    color: #0774AD;
 }
 
 /* Footer Section */
@@ -217,62 +277,20 @@ footer a:hover {
   $Components
 \*------------------------------------*/
 
-.bubble {
-    position: relative;
-    width: auto;
-    height: 100%;
-    padding: 20px 20px 10px;
-    margin-bottom: 30px;
-    color: #49535F;
-    background: #ECEFF2;
-    border: #7F7F7F solid 0px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-.bubble:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 20px;
-    border-style: solid;
-    border-width: 10px 10px 0;
-    border-color: #ECEFF2 transparent;
-    display: block;
-    width: 0;
-    z-index: 1;
-}
-
-/* Pricing Boxes */
-.pricing {
-    padding: 15px;
-    margin-bottom: 15px;
-    background: #ECEFF2 url("images/texture-2.png") top right no-repeat;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-.info-panel {
-    padding: 15px;
-    color: #9099A3;
-    background: #2F353E url("images/texture-3.png");
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-.info-panel h4 {
-    color: #FFF;
-}
-
-/* Advice Banner (Another Call To Action) */
-.img-advice {
-    margin-bottom: 20px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
 
 /* Flatten Default Button */
+
+hr.soften{
+    height: 1px;
+    margin: 70px 0;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    border: 0;
+}
+
+
 .btn {
     padding:7px 13px;
     -webkit-border-radius: 3px;
@@ -365,12 +383,78 @@ footer a:hover {
     h1 {
         font-weight: normal; /* Avoid safari & ios double shadow and offset */
     }
+    .technology div i {
+        font-size: 75px;
+        color: #0774AD;
+    }
+
+    .principles div i {
+        font-size: 65px;
+        color: #0774AD;
+        float:left;
+    }
+    .experience h3{
+        font-size: 35px;
+        color: #0774AD;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    .approach div i {
+        font-size: 65px;
+        color: #0774AD;
+    }
+    .expertise h3{
+        font-size: 35px;
+        color: #0774AD;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    a.thumbnail{
+        width: 210px;
+    }
 }
 
 @media (max-width: 979px) {
     h1 {
         font-size: 50px; /* Resize to fit better on mobile devices */
     }
+    .technology div i {
+        font-size: 60px;
+        color: #0774AD;
+    }
+
+    .principles div i {
+        font-size: 50px;
+        color: #0774AD;
+        float:left;
+    }
+    .experience h3{
+        font-size: 25px;
+        color: #0774AD;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    .approach div i {
+        font-size: 50px;
+        color: #0774AD;
+    }
+    .expertise h3{
+        font-size: 25px;
+        color: #0774AD;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+    }
+    a.thumbnail{
+        width: 156px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -393,5 +477,10 @@ footer a:hover {
         font-size: 25px;
         font-weight: bold;
     }
+
+}
+
+@media (max-width: 767px) {
+
 
 }

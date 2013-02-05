@@ -17,72 +17,263 @@
 get_header( 'front-page' ); ?>
 
   <section id="primary" class="span8" xmlns="http://www.w3.org/1999/html">
-    <div id="content" role="main">
+  <div id="content" role="main">
 
-      <div class="row-fluid big-things">
-        <h1 class="span12 intro">We build BIG things with WordPress.</h1>
-        <h2 class="span12 byline">We develop and design web applications using the world’s most popular and versatile
-          content management system.</h2>
-      </div>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="./index.html">WRKTG</a>
 
-      <div class="row-fluid principles">
-        <div class="span3">
-          <i class="icon-group"></i>
-          <h2>Expertise</h2>
-          <p>WRKTG is a network of professional developers and designers.</p>
-        </div>
-        <div class="span3"><br/>
-          <i class="icon-cogs"></i>
-          <h3>Transparency</h3>
-          <p>The conversation you have with us is the same conversation you would have internally about business
-            objectives, organizational constraints, and timeline. You can expect each WRKTG team member to generously
-            share their knowledge and recommend solutions that are in the best interest of your business. By working
-            together we remove all the unnecessary BS between stakeholders and makers. Solutions are arrived at by
-            leveraging the collective talent and experience of the entire team&#8230;.which means you too!</p>
-        </div>
-        <div class="span3">
-          <i class="icon-comments-alt"></i>
-          <h3>Communication</h3>
-          <p>Plans are made together, and can be changed together! During the project we are firm believers that in
-            order to avoid unnecessary revisions and hold-ups, it is essential to establish clear and consistent lines
-            of communication. Setting expectations at the outset and sticking to them is paramount. However, this
-            doesn’t mean that there is no flexibility to change things along the way as new information and ideas are
-            infused into the project.</p>
-        </div>
-        <div class="span3">
-          <i class="icon-truck"></i>
-          <h3>Deliverables</h3>
-          <p>Since you are a members of the team you’ll get to see the entire evolution of the build. However, weekly
-            builds allow the entire team to test a version of the build at that point in time.</p>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="active">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="">
+              <a href="./getting-started.html">Principles</a>
+            </li>
+            <li class="">
+              <a href="./scaffolding.html">How we work</a>
+            </li>
+            <li class="">
+              <a href="./base-css.html">Clients</a>
+            </li>
+            <li class="">
+              <a href="./components.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="row-fluid clients">
-        <h2>Some of our clients</h2>
-        <blockquote class="offset3 span6"><i class="icon-quote-left"></i>
-          Once you&#8217;ve worked with WRKTG and experienced
-          this enlightened approach to productivity you&#8217;ll wonder why someone hadn&#8217;t already thought of this
-          concept.
-          <i class="icon-quote-right"></i>
-          <span class="byline">Janet Walkutz, Homewood Health Centre</span>
-        </blockquote>
+  <div class="row-fluid big-things">
+    <h2 class="span12 intro">We build BIG things with WordPress.</h2>
 
+    <p class="span12 sub-intro">We design and develop web applications using the world’s most popular and versatile
+      content management system.</p>
+  </div>
+
+
+  <div class="row-fluid technology">
+    <div class="span3 well scaleup">
+      <i class="icon-circle-arrow-up"></i>
+
+      <h3>ScaleUp</h3>
+
+      <p>WRKTG is a network of professional developers and designers.</p>
+    </div>
+
+    <div class="span3 well">
+      <i class="icon-group"></i>
+
+      <h3>People</h3>
+
+      <p>The conversation you have with us is the same conversation you would have internally about business
+        objectives, organizational constraints, and timeline. </p>
+    </div>
+    <div class="span3 well">
+      <i class="icon-building"></i>
+
+      <h3>Build</h3>
+
+      <p>Plans are made together, and can be changed together! During the project we are firm believers that in
+        order to avoid unnecessary revisions and hold-ups, it is essential to establish clear and consistent lines
+        of communication. </p>
+    </div>
+    <div class="span3 well">
+      <i class="icon-desktop"></i>
+      <i class="icon-mobile-phone"></i>
+
+      <h3>Responsive</h3>
+
+      <p>Since you are a members of the team you’ll get to see the entire evolution of the build. However, weekly
+        builds allow the entire team to test a version of the build at that point in time.</p>
+    </div>
+  </div>
+
+  <hr class="soften">
+
+  <div class="row-fluid commandments">
+    <h2 class="span12 intro">Wrktg Principles.</h2>
+
+    <p class="span12 sub-intro">“Tell me and I will forget. Show me and I will remember. Involve me and I will
+      understand” – Confucius</p>
+  </div>
+
+  <div class="well">
+    <div class="row principles">
+      <div class="offset2 span4 experience">
+        <h3><i class="icon-folder-open"></i>openness and sharing</h3>
+
+        <p>WRKTG is a network of professional developers and designers.
+          WRKTG is a network of professional developers and designers.
+          WRKTG is a network of professional developers and designers.</p>
       </div>
 
-      <div class="row-fluid client-logo">
-        <div class="span12">
+      <div class="span4 experience">
+        <h3><i class="icon-random"></i>agile & iterative</h3>
 
-      <img class="alignnone size-full wp-image-156" alt="canc1" src="/wp-content/uploads/2012/11/canc1.png" width="270" height="70" />
-      <img class="alignnone size-full wp-image-148" alt="ichannel" src="/wp-content/uploads/2012/11/ichannel.png" width="64" height="70"/>
-      <img class="alignnone size-full wp-image-145" alt="homewood" src="/wp-content/uploads/2012/11/homewood.png" width="264" height="70"/>
-      <img class="alignnone size-full wp-image-147" alt="dh" src="/wp-content/uploads/2012/11/dh.png" width="190" height="70"/>
-      <img class="alignnone size-full wp-image-146" alt="nwi" src="/wp-content/uploads/2012/11/nwi.png" width="127" height="70"/>
+        <p>WRKTG is a network of professional developers and designers.
+          WRKTG is a network of professional developers and designers.
+          WRKTG is a network of professional developers and designers.</p>
+      </div>
+    </div>
 
-        </div>
+    <div class="row principles">
+      <div class="offset2 span4 experience">
+        <h3><i class="icon-sitemap"></i>flexible network</h3>
+
+        <p>WRKTG is a network of professional developers and designers.
+          WRKTG is a network of professional developers and designers.
+          WRKTG is a network of professional developers and designers.</p>
       </div>
 
-    <!-- #content -->
-  </section><!-- #primary -->
+      <div class="span4 experience">
+        <h3><i class="icon-bullhorn"></i>continued dialogue</h3>
 
+        <p>WRKTG is a network of professional developers and designers.
+          WRKTG is a network of professional developers and designers.
+          WRKTG is a network of professional developers and designers.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="soften">
+
+  <div class="row-fluid process">
+    <h2 class="span12 intro">How we work.</h2>
+
+    <p class="span12 sub-intro">It's all about co-creation.</p>
+
+  </div>
+
+  <div class="well">
+    <div class="row-fluid approach">
+
+      <div class="offset2 span2 expertise">
+        <h3>Set-up.</h3>
+      </div>
+
+      <div class="span2 ">
+        <script type="text/javascript">
+          jQuery(document).ready(function ($) {
+            $('.approach i').popover();
+          });
+        </script>
+
+        <i class="icon-time" data-content="Popover with data-trigger" data-placement="top"
+           data-original-title="Estimate"
+           data-trigger="hover"></i>
+      </div>
+      <div class="span2 ">
+        <i class="icon-group" data-content="Select a team based on project specs." data-placement="top"
+           data-original-title="Team"
+           data-trigger="hover"></i>
+      </div>
+      <div class="span2">
+        <i class="icon-tasks" data-content="The team refines the estimate and creates a weekly task list."
+           data-placement="top" data-original-title="Refined Estimate and Tasks"
+           data-trigger="hover"></i>
+      </div>
+    </div>
+
+    <hr class="soften">
+
+    <div class="row-fluid approach">
+      <div class="offset2 span2 expertise">
+        <h3>Iteration.</h3>
+      </div>
+      <div class="span2">
+        <i class="icon-cogs" data-content="Popover with data-trigger" data-placement="top"
+           data-original-title="Development"
+           data-trigger="hover"></i>
+      </div>
+      <div class="span2 ">
+        <i class="icon-building"
+           data-content="The entire team will be able to test the weeks build. Weekly builds are essential to keep the project on task."
+           data-placement="top"
+           data-original-title="Weekly Build" data-trigger="hover"></i>
+      </div>
+      <div class="span2 ">
+        <i class="icon-ok-circle"
+           data-content="You will be able to approve the weeks hours before payment is released to the development team. Pay is released on a bi-weekly basis."
+           data-placement="top"
+           data-original-title="Time Approval" data-trigger="hover"></i>
+      </div>
+    </div>
+
+    <hr class="soften">
+
+    <div class="row-fluid approach">
+      <div class="offset2 span2 expertise">
+        <h3>Deliverables.</h3>
+      </div>
+      <div class="offset2 span2 ">
+        <i class="icon-truck" data-content="Popover with data-trigger" data-placement="top"
+           data-original-title="Final Product" data-trigger="hover"></i>
+      </div>
+    </div>
+  </div>
+
+  <hr class="soften">
+
+  <div class="clients">
+    <div class="row-fluid copy">
+      <h2 class="span12 intro">Some of our clients.</h2>
+
+      <p class="span12 sub-intro">we have sexy times with our clients.</p>
+    </div>
+    <div class="row-fluid">
+      <ul class="thumbnails example-sites">
+        <li class="span3">
+          <a class="thumbnail" href="http://homewood.org/" target="_blank">
+            <img src="http://wrktg.site/wp-content/themes/wrktg-public/images/Homewood.png" alt="Homewood">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://dhltd.com/" target="_blank">
+            <img src="http://wrktg.site/wp-content/themes/wrktg-public/images/D+H.png" alt="Davis and Henderson">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://no-kidding.ichannel.ca/" target="_blank">
+            <img src="http://wrktg.site/wp-content/themes/wrktg-public/images/ichannel.png" alt="No Kidding - ichannel">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://nobelwomensinitiative.org/" target="_blank">
+            <img src="http://wrktg.site/wp-content/themes/wrktg-public/images/NWI.png" alt="Noble Women's Initiative">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="soften">
+
+  <div class="row-fluid contact">
+    <h2 class="span12 intro">Contact Us.</h2>
+
+    <p class="span12 sub-intro">Let's Work Together!</p>
+  </div>
+
+
+  <div class="row-fluid emergency">
+    <div class="offset1 span4 well ">
+      <i class="icon-ambulance"></i>
+
+      <h3>Emergencies</h3>
+
+      <p>If you absolutely, positively, need something critical done right away!</p>
+    </div>
+  </div>
+
+  </section>
 <?php
 get_footer();
