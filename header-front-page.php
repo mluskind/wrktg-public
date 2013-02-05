@@ -33,6 +33,6 @@
             });
         </script>
 		<div class="container">
-			<div id="page" class="hfeed row">
+			<div id="page" class="hfeed row-fluid">
 				
 <?php
