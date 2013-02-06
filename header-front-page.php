@@ -23,7 +23,9 @@
 		<?php wp_head(); ?>
 	</head>
 	
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?>
+
+        <?php get_template_part( 'navbar' ); ?>
 
         <?php get_template_part( 'showcase' ); ?>
         <?php get_template_part( 'strip' ); ?>
@@ -32,7 +34,6 @@
                 $('.showcase').height( $(window).height() - $('.strip').outerHeight() );
             });
         </script>
+
 		<div class="container">
 			<div id="page" class="hfeed row-fluid">
-				
-<?php
