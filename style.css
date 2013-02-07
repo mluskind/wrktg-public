@@ -50,14 +50,15 @@ hr {
     border-top: 1px solid #DDD;
 }
 
-/*------------------------------------*\
-  $Navigation
-\*------------------------------------*/
-
-.navbar .brand {
+.brand {
     font-weight: bold;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+
+/*------------------------------------*\
+  $Navigation
+\*------------------------------------*/
 
 .navbar {
     display: none;
@@ -273,11 +274,11 @@ a.thumbnail{
 
 /* "emergency" Section */
 
-.emergency div{
+.emergency{
     text-align: center;
 }
 
-.emergency div i{
+.emergency i{
     font-size: 50px;
     color: #0774AD;
 }

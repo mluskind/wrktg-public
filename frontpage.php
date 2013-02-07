@@ -71,13 +71,41 @@ get_header( 'front-page' ); ?>
           <p class="span12 sub-intro">Let's Work Together!</p>
         </header>
 
-        <div class="row-fluid emergency">
-          <div class="offset1 span4 well ">
+        <div class="row-fluid">
+          <div class="offset1 span4 well emergency">
             <i class="icon-ambulance"></i>
 
             <h3>Emergencies</h3>
 
-            <p>If you absolutely, positively, need something critical done right away!</p>
+            <p>If you absolutely, positively, need something critical done right away, <strong>we're available</strong>!</p>
+          </div>
+          <div class="span6 well">
+            <div itemprop="contactPoint" itemscope itemtype="http://schema.org/Person" class="span6">
+              <div itemscope itemtype="http://schema.org/Person">
+                <h4 itemprop="name">Taras Mankovski</h4>
+                <p itemprop="jobTitle"><strong>CEO, Founder</strong></p>
+
+                <p itemprop="phone"><i class="icon-phone"></i> 416-779-3907</p>
+
+                <p itemprop="email">
+                  <i class="icon-envelope"></i> <a href="mailto:taras@wrktg.com">taras@wrktg.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div itemprop="contactPoint" itemscope itemtype="http://schema.org/Person" class="span6">
+                <div itemscope itemtype="http://schema.org/Person">
+                  <h4 itemprop="name">Michael Luskind</h4>
+                  <p itemprop="jobTitle"><strong>Co-founder</strong></p>
+
+                  <p itemprop="phone"><i class="icon-phone"></i> 647-985-1296</p>
+
+                  <p itemprop="email">
+                    <i class="icon-envelope"></i> <a href="mailto:michael@wrktg.com">michael@wrktg.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </article>
