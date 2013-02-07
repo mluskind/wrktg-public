@@ -5,9 +5,6 @@
       <a class="brand" href="#">WRKTG</a>
       <ul class="nav">
         <li class="active"><a href="#primary">Home</a></li>
-        <li><a href="#principles">Principles</a></li>
-        <li><a href="#how-we-work">How we work</a></li>
-        <li><a href="#clients">Clients</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>

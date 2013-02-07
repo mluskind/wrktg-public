@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="span12">
-                <h3>Let's Work Together! <a class="btn" href="#">Contact us <i class="icon icon-caret-right"></i></a></h3>
+                <h3>Let's Work Together! <a class="btn" href="#contact">Contact us <i class="icon icon-caret-right"></i></a></h3>
             </div>
         </div>
     </div>
