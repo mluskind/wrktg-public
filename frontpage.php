@@ -68,7 +68,7 @@ get_header( 'front-page' ); ?>
         <header>
           <h2 class="span12 intro">Contact Us.</h2>
 
-          <p class="span12 sub-intro">Let's Work Together!</p>
+          <p class="sub-intro">Let's Work Together!</p>
         </header>
 
         <div class="row-fluid">
