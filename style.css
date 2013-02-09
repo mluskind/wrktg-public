@@ -71,12 +71,16 @@ hr {
     position: fixed;
     top: 0;
     width: 100%;
-    background: url( 'images/noisy_net.png' ) repeat;
+    background: black;
     z-index: 100;
 }
 
 .navbar-inverse .navbar-inner{
     background: none;
+}
+
+.navbar-inverse .nav-collapse li.active a {
+    color: #fff;
 }
 
 /* Showcase */

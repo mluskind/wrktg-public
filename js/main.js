@@ -11,7 +11,15 @@ jQuery(document).ready(function($){
         }
     });
 
-    $( "#primary, #how-we-work, #clients, #contact" ).waypoint(function( direction ) {
+    $( "#content, #how-we-work, #clients, #contact" ).waypoint(function( direction ) {
+        function activate( id ) {
+            $( 'a[href="#' + id + '"]' ).parent().addClass( 'active' );
+        }
+
+        function deactivate( id ) {
+            $( 'a[href="#' + id + '"]' ).parent().removeClass( 'active' );
+        }
+
         current_id = $(this).attr( "id" );
         if ( direction === 'down' ) {
             previous_id = $(this).waypoint( 'prev' ).attr( "id" );
@@ -20,8 +28,10 @@ jQuery(document).ready(function($){
             previous_id = $(this).waypoint( 'next').attr( "id" );
         }
         if ( previous_id !== undefined ) {
-            $( 'a[href="#' + previous_id + '"]' ).parent().removeClass( 'active' );
-            $( 'a[href="#' + current_id + '"]').parent().addClass( 'active' );
+            activate( current_id );
+            deactivate( previous_id );
+        } else {
+            activate( current_id );
         }
     });
 
