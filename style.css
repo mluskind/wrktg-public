@@ -187,13 +187,23 @@ p.sub-intro {
 .technology div {
     text-align: center;
 }
-.technology div i {
+.technology div i, .technology div img {
+    display: block;
     font-size: 100px;
     color: #0774AD;
+    margin: 0 auto 10px auto;
 }
 
-.technology .scaleup i {
-    color: #F2CE00;
+.technology div .same-line {
+    display: block;
+}
+
+.technology div .same-line i {
+    display: inline;
+}
+
+.technology p {
+    text-align: left;;
 }
 
 /* How We Work Section */
@@ -284,15 +294,24 @@ hr.soften{
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-
+    .technology div h3 i, .technology div h3 img {
+        font-size: 40px;
+        display: inline;
+        width: 40px;
+        height: 40px;
+    }
+    .technology div .same-line {
+        display: inline;
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
+    .showcase header {
+        bottom: 20px;
+    }
 }

@@ -52,35 +52,27 @@
         </header>
         <div class="row-fluid technology">
           <div class="span3 well scaleup">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/images/scaleup.png"
-                 alt="scaleup icon">
 
-            <h3>ScaleUp</h3>
+            <h3><img src="<?php echo get_stylesheet_directory_uri() ?>/images/scaleup.png"
+                     alt="scaleup icon"> ScaleUp</h3>
 
-            <p>ScaleUp is an in-house framework that's designed to make it easier to build web applications on
-              WordPress. We use it to save our clients time and money!</p>
+            <p>ScaleUp is an in-house framework that's designed to make it easier to build web applications on.</p>
           </div>
           <div class="span3 well">
-            <i class="icon-group"></i>
-
-            <h3>People</h3>
+            <h3><i class="icon-group"></i> People</h3>
 
             <p>WRKTG is composed of a core team of dedicated developers with a large network of professional
               freelancers.</p>
           </div>
           <div class="span3 well">
-            <i class="icon-building"></i>
 
-            <h3>Build</h3>
+            <h3><i class="icon-building"> </i> Build</h3>
 
             <p>We work with Startups, NGOs and small to medium sized companies to build, test and validate
               ideas.</p>
           </div>
           <div class="span3 well">
-            <i class="icon-desktop"></i>
-            <i class="icon-mobile-phone"></i>
-
-            <h3>Responsive</h3>
+            <h3><span class="same-line"><i class="icon-desktop"></i> <i class="icon-mobile-phone"></i></span> Responsive</h3>
 
             <p>We build applications that run across all devices by building responsive from the start!</p>
           </div>
