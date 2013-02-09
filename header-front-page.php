@@ -1,14 +1,3 @@
-<?php
-/** header-front-page.php
- *
- * Displays all of the <head> section and everything up till </header>
- *
- * @author		Konstantin Obenland
- * @package		The Bootstrap
- * @since		1.0 - 05.02.2012
- */
-
-?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 	<head>
@@ -24,11 +13,3 @@
 	</head>
 	
 	<body <?php body_class(); ?>
-
-        <?php get_template_part( 'navbar' ); ?>
-
-        <?php get_template_part( 'showcase' ); ?>
-        <?php get_template_part( 'strip' ); ?>
-
-		<div class="container">
-			<div id="page" class="hfeed row-fluid">

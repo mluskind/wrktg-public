@@ -15,7 +15,7 @@ Template: the-bootstrap
 
 body {
     color: #CCCCCC;
-    /*color: #808792;*/
+    padding: 0 20px;
 }
 h1 {
     font-size: 90px;
@@ -57,10 +57,11 @@ hr {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.showcase, .strip, .navbar {
+    margin: 0 -20px;
+}
 
-/*------------------------------------*\
-  $Navigation
-\*------------------------------------*/
+/* Navigation */
 
 .navbar {
     display: none;
@@ -78,45 +79,13 @@ hr {
     background: none;
 }
 
-/*------------------------------------*\
-  $Base
-\*------------------------------------*/
-
-/* Top Section Showcase */
+/* Showcase */
 .showcase {
     position: relative;
     z-index: -1;
     background: transparent url('images/lego-dude1.jpg') center fixed;
     background-size: cover;
     max-height: 725px;
-}
-
-.caption .blue {
-    background: url("images/opaque.png");
-}
-
-.caption.top-left p, .caption.middle-left p, .caption.bottom-left p {
-    padding-bottom: 10px;
-    line-height: 100%;
-}
-
-.caption .large {
-    font-size: 65px;
-    font-weight: bold;
-}
-
-.caption .small {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.caption p, .caption h1 {
-    color: #FAFFFF;
-    padding: 5px 10px;
-    margin: 5px;
-    float: left;
-    display: block;
-    clear: both;
 }
 
 .showcase header {
@@ -126,11 +95,43 @@ hr {
     bottom: -20px;
 }
 
-.description {;
+.showcase .description {;
     font-size: 20px;
     margin: 0;
     line-height: 1.25;
     color: #fff;
+}
+
+
+.showcase .caption .blue {
+    background: url("images/opaque.png");
+}
+
+.showcase .caption.top-left p,
+.showcase .caption.middle-left p,
+.showcase .caption.bottom-left p {
+    padding-bottom: 10px;
+    line-height: 100%;
+}
+
+.showcase .caption .large {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.showcase .caption .small {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.showcase .caption p,
+.showcase .caption h1 {
+    color: #FAFFFF;
+    padding: 5px 10px;
+    margin: 5px;
+    float: left;
+    display: block;
+    clear: both;
 }
 
 /* Strip (Call to action) */
@@ -197,69 +198,8 @@ p.sub-intro {
     height: 440px;
 }
 
-#process-diagram dl {
+#how-we-work dl {
     display: none;
-}
-
-/* "Principles" Section */
-.principles div {
-    text-align: left;
-}
-.principles div i {
-    font-size: 80px;
-    color: #0774AD;
-    float:left;
-}
-
-.experience h3{
-    font-size: 50px;
-    color: #0774AD;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.experience i{
-    padding-right: 15px;
-}
-
-
-.principles div i:hover,
-.principles div i:active,
-.principles div i.active,
-.principles div i.disabled,
-.principles div i[disabled] {
-    color: #F2CE00;
-}
-
-/* "Process" Section */
-
-.approach div {
-    text-align: center;
-}
-.approach div i {
-    font-size: 80px;
-    color: #0774AD;
-}
-
-.expertise h3{
-    font-size: 45px;
-    color: #0774AD;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-}
-
-h3.popover-title{
-    color: #0774AD;
-}
-
-.approach div i:hover,
-.approach div i:active,
-.approach div i.active,
-.approach div i.disabled,
-.approach div i[disabled] {
-    color: #F2CE00;
 }
 
 /* "Clients" Section */
@@ -272,8 +212,7 @@ a.thumbnail{
     width: 262px;
 }
 
-
-/* "emergency" Section */
+/* Emergency Section */
 
 .emergency{
     text-align: center;
@@ -283,27 +222,6 @@ a.thumbnail{
     font-size: 50px;
     color: #0774AD;
 }
-
-/* Footer Section */
-footer {
-    width: 100%;
-    padding: 30px 0 20px 0;
-    margin-bottom: 0;
-    background: #2F353E url("images/noisy_net.png");
-}
-
-footer a {
-    color: #FFF;
-}
-footer a:hover {
-    text-decoration: none;
-    color: #FFF;
-    border-bottom: 1px dotted #FFF;
-}
-
-
-
-
 
 /*------------------------------------*\
   $Components
@@ -340,6 +258,7 @@ hr.soften{
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 .btn:hover,
 .btn:active,
 .btn .active,
@@ -366,119 +285,22 @@ hr.soften{
     background-color: #5F686F;
 }
 
-
-/*------------------------------------*\
-  $Responsive
-\*------------------------------------*/
-
-@media (max-width: 1200px) {
-    h1 {
-        font-weight: normal; /* Avoid safari & ios double shadow and offset */
-    }
-    .technology div i {
-        font-size: 75px;
-        color: #0774AD;
-    }
-
-    .principles div i {
-        font-size: 65px;
-        color: #0774AD;
-        float:left;
-    }
-    .experience h3{
-        font-size: 35px;
-        color: #0774AD;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-    }
-
-    .approach div i {
-        font-size: 65px;
-        color: #0774AD;
-    }
-    .expertise h3{
-        font-size: 35px;
-        color: #0774AD;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-    }
-
-    a.thumbnail{
-        width: 210px;
-    }
-    .technology img{
-        width: 80px;
-    }
-}
-
-@media (max-width: 979px) {
-    h1 {
-        font-size: 50px; /* Resize to fit better on mobile devices */
-    }
-    .technology div i {
-        font-size: 60px;
-        color: #0774AD;
-    }
-
-    .principles div i {
-        font-size: 50px;
-        color: #0774AD;
-        float:left;
-    }
-    .experience h3{
-        font-size: 25px;
-        color: #0774AD;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-    }
-
-    .approach div i {
-        font-size: 50px;
-        color: #0774AD;
-    }
-    .expertise h3{
-        font-size: 25px;
-        color: #0774AD;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-    }
-    a.thumbnail{
-        width: 156px;
-        margin: 0 auto;
-    }
-    .technology img{
-        width: 64px;
-    }
-
+/* Large desktop */
+@media (min-width: 1200px) {
 
 }
 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-    .showcase,
-    .strip,
-    footer {
-        margin-left: -20px; /* Maintain elements full-width */
-        margin-right: -20px;
-    }
-    .showcase {
-        background: transparent url("images/lego-dude1.jpg") center top scroll; /* Smaller image to load faster */
-        background-size: cover;
-    }
-    .caption .large {
-        font-size: 45px;
-        font-weight: bold;
-    }
 
-    .caption .small {
-        font-size: 25px;
-        font-weight: bold;
-    }
-    a.thumbnail{
-        width: 262px;
-    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 
 }

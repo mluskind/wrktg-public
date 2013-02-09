@@ -2,7 +2,7 @@
  * Waypoints
  */
 jQuery(document).ready(function($){
-    $( '#page' ).waypoint( function( direction ) {
+    $( '#content' ).waypoint( function( direction ) {
         if ( direction === 'down' ) {
             $( '.navbar' ).toggleClass( 'stuck' ).slideDown( 'fast' );
         }
@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
         }
     });
 
-    $( "#primary, #principles, #how-we-work, #clients, #contact" ).waypoint(function( direction ) {
+    $( "#primary, #how-we-work, #clients, #contact" ).waypoint(function( direction ) {
         current_id = $(this).attr( "id" );
         if ( direction === 'down' ) {
             previous_id = $(this).waypoint( 'prev' ).attr( "id" );
