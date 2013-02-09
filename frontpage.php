@@ -117,7 +117,7 @@
 
       <article id="contact">
         <header>
-          <h2 class="span12 intro">Contact Us.</h2>
+          <h2 class="intro">Contact Us.</h2>
 
           <p class="sub-intro">Let's Work Together!</p>
         </header>

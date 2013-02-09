@@ -93,10 +93,9 @@ hr {
 }
 
 .showcase header {
-    padding: 60px 10px 100px;
-    text-align: center;
+    text-align: left;
     position: absolute;
-    bottom: -20px;
+    bottom: 50px;
 }
 
 .showcase .description {;
@@ -160,16 +159,16 @@ hr {
 }
 
 article header {
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
 h2.intro {
     margin: 20px 0 10px;
-    font-size: 60px;
+    font-size: 44px;
     font-weight: 200;
     line-height: 1;
     letter-spacing: -1px;
-    text-align: center;
     color: #5a5a5a;
 }
 
@@ -214,17 +213,6 @@ p.sub-intro {
 
 a.thumbnail{
     width: 262px;
-}
-
-/* Emergency Section */
-
-.emergency{
-    text-align: center;
-}
-
-.emergency i{
-    font-size: 50px;
-    color: #0774AD;
 }
 
 /*------------------------------------*\
