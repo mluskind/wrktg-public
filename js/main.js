@@ -1,3 +1,57 @@
+/**
+ * Waypoints
+ */
+jQuery(document).ready(function($){
+    $( '#page' ).waypoint( function( direction ) {
+        if ( direction === 'down' ) {
+            $( '.navbar' ).toggleClass( 'stuck' ).slideDown( 'fast' );
+        }
+        if ( direction === 'up' ) {
+            $( '.navbar').slideUp( 'fast' ).toggleClass( 'stuck');
+        }
+    });
+
+    $( "#primary, #principles, #how-we-work, #clients, #contact" ).waypoint(function( direction ) {
+        current_id = $(this).attr( "id" );
+        if ( direction === 'down' ) {
+            previous_id = $(this).waypoint( 'prev' ).attr( "id" );
+        }
+        if ( direction === 'up' ) {
+            previous_id = $(this).waypoint( 'next').attr( "id" );
+        }
+        if ( previous_id !== undefined ) {
+            $( 'a[href="#' + previous_id + '"]' ).parent().removeClass( 'active' );
+            $( 'a[href="#' + current_id + '"]').parent().addClass( 'active' );
+        }
+    });
+
+});
+
+/**
+ * Fancy scroll
+ */
+jQuery(document).ready(function($){
+    // fancy animation - fade out header content on page scroll
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 10) {
+            $('.js-animated').stop().animate({opacity: 0}, 200);
+        }
+        if ($(this).scrollTop() < 10) {
+            $('.js-animated').stop().animate({opacity: 1}, 500);
+        }
+    });
+});
+
+/**
+ * Showcase
+ */
+jQuery(document).ready(function($){
+    $('.showcase').height( $(window).height() - $('.strip').outerHeight() );
+});
+
+/**
+ * how we work - process diagram
+ */
 jQuery(document).ready(function ($) {
 
     var base = { 'width': 1170, height: 440 }

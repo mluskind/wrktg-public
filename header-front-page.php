@@ -29,11 +29,6 @@
 
         <?php get_template_part( 'showcase' ); ?>
         <?php get_template_part( 'strip' ); ?>
-        <script type="text/javascript">
-            jQuery(document).ready(function($){
-                $('.showcase').height( $(window).height() - $('.strip').outerHeight() );
-            });
-        </script>
 
 		<div class="container">
 			<div id="page" class="hfeed row-fluid">
