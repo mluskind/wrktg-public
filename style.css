@@ -140,7 +140,7 @@ hr {
 /* Strip (Call to action) */
 .strip {
     width: auto;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     background: #232323 url("images/noisy_net.png");
 }
@@ -313,5 +313,8 @@ hr.soften{
 @media (max-width: 480px) {
     .showcase header {
         bottom: 20px;
+    }
+    .strip {
+        text-align: left;
     }
 }
