@@ -33,24 +33,21 @@ get_header( 'front-page' ); ?>
 
             <h3>ScaleUp</h3>
 
-            <p>WRKTG is a network of professional developers and designers.</p>
+            <p>ScaleUp is an in-house framework that's designed to make it easier to build web applications on WordPress. We use it to save our clients time and money!</p>
           </div>
           <div class="span3 well">
             <i class="icon-group"></i>
 
             <h3>People</h3>
 
-            <p>The conversation you have with us is the same conversation you would have internally about business
-              objectives, organizational constraints, and timeline. </p>
+            <p>WRKTG is composed of a core team of dedicated developers with a large network of professional freelancers.</p>
           </div>
           <div class="span3 well">
             <i class="icon-building"></i>
 
             <h3>Build</h3>
 
-            <p>Plans are made together, and can be changed together! During the project we are firm believers that in
-              order to avoid unnecessary revisions and hold-ups, it is essential to establish clear and consistent lines
-              of communication. </p>
+            <p>We work with Startups, NGOs and small to medium sized companies to build, test and validate ideas.</p>
           </div>
           <div class="span3 well">
             <i class="icon-desktop"></i>
@@ -58,11 +55,12 @@ get_header( 'front-page' ); ?>
 
             <h3>Responsive</h3>
 
-            <p>Since you are a members of the team you’ll get to see the entire evolution of the build. However, weekly
-              builds allow the entire team to test a version of the build at that point in time.</p>
+            <p>We build applications that run across all devices by building responsive from the start!</p>
           </div>
         </div>
       </article>
+
+      <?php get_template_part( 'how-we-work' ); ?>
 
       <article id="contact">
         <header>

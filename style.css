@@ -36,9 +36,11 @@ h3, h4, h5, h6{
     line-height: 40px;
     color: #5a5a5a;
   }
-
+h3 {
+    font-size: 31.5px;
+}
 p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     color: #5a5a5a;
 }
@@ -198,7 +200,14 @@ hr {
     height: 400px;
 }
 
+/* How We Work Section */
+#process-diagram {
+    height: 440px;
+}
 
+#process-diagram dl {
+    display: none;
+}
 
 /* "Principles" Section */
 .principles div {
