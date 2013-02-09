@@ -56,7 +56,7 @@
             <h3><img src="<?php echo get_stylesheet_directory_uri() ?>/images/scaleup.png"
                      alt="scaleup icon"> ScaleUp</h3>
 
-            <p>ScaleUp is an in-house framework that's designed to make it easier to build web applications on.</p>
+            <p>ScaleUp is an in-house framework that's designed to make it easier to build web apps.</p>
           </div>
           <div class="span3 well">
             <h3><i class="icon-group"></i> People</h3>
