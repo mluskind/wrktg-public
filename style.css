@@ -123,7 +123,7 @@ hr {
 }
 
 .showcase .caption .small {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -204,6 +204,10 @@ p.sub-intro {
 
 .technology p {
     text-align: left;;
+}
+
+.technology .well{
+    min-height: 325px;
 }
 
 /* How We Work Section */

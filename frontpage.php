@@ -1,30 +1,4 @@
-<?php get_header( 'front-page' ); ?>
-
-  <div class="container">
-    <div class="navbar navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-
-          <a class="brand" href="#">WRKTG</a>
-
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="#content">Home</a></li>
-              <li><a href="#how-we-work">How We Work</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<?php get_header(); ?>
 
   <section class="showcase">
     <div class="caption middle-left container">
